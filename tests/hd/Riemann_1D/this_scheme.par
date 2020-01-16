@@ -1,0 +1,17 @@
+! Temporary par file
+&savelist
+ dtsave_log = 0.0035000000000000005
+ dtsave_dat = 0.0035000000000000005
+/
+&stoplist
+ time_max = 0.035
+/
+&methodlist
+ time_integrator = "threestep"
+ flux_scheme = "tvdlf"
+ limiter = "minmod"
+/
+&meshlist
+ domain_nx1 = 512
+ iprob = 5
+/

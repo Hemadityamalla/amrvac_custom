@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="riemannd-2d-test-problem">Riemannd 2D test problem</h1>
+<h1 id="introduction">Introduction</h1>
+<p>These are 2D Riemann problems as also in Liska &amp; Wendro , SIAM J. Sci. Comput.
+25, 3, pp. 995-1017, 2003 (section 4.4). You can try to modify the setups, or
+compare different schemes. This is a direct generalization of the 1D Riemann
+problem discussed in the course, so you can try and interpret 1D versus 2D
+aspects (involving shocks, contact discontinuities, rarefaction waves). You can
+also make a 3D version.</p>
+<h1 id="how-to-run">How to run</h1>
+<h2 id="setting-up-the-files">Setting up the files</h2>
+<pre><code>$AMRVAC_DIR/setup.pl -d=2
+</code></pre>
+<h2 id="compiling">Compiling</h2>
+<p>Simply issue the <code>make</code> command:</p>
+<pre><code>make
+</code></pre>
+<h2 id="running-the-code">Running the code</h2>
+<p>To run with e.g. 4 processors, use</p>
+<pre><code>mpirun -np 4 ./amrvac -i rm_2d.par
+</code></pre>
+<h1 id="changing-the-parameters">Changing the parameters</h1>
+<p>A complete list of parameters can be found <a href="par.md">par.md</a>.</p>
+<h1 id="changing-the-physics-and-initial-conditions">Changing the physics and initial conditions</h1>
+<p>Have a look at the local file <code>mod_usr.t</code>. You can modify the 
+initial conditions easily.</p>
+</body></html>
